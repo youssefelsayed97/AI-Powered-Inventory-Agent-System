@@ -110,7 +110,7 @@ project/
 
 1. Clone repo 
 
-   git clone <url>
+   git clone https://github.com/youssefelsayed97/AI-Powered-Inventory-Agent-System.git
   
    cd AI-Powered-Inventory-Agent-System
   
