@@ -20,7 +20,26 @@ Instead of traditional CRUD-only logic, the system:
 
 ## ⚙️ System Architecture
 
-Image → Caption → Embedding → Vector DB → Query → Rerank → Results
+User Input (Natural Language and Image)
+        ↓
+🤖 LLM Agent (Gemini)
+        ↓
+Tool Router (Decides Action)
+   ├── search_stock
+   ├── delete_stock
+   └── add_stock (optional extension)
+        ↓
+🧠 AI Processing Layer
+   ├── Image Captioning (BLIP)
+   ├── Text Embedding (SentenceTransformers)
+        ↓
+🔎 Vector Search Engine (Qdrant)
+        ↓
+🔁 Re-ranking Layer (Cross-Encoder)
+        ↓
+📦 Structured Results (Stock Items)
+        ↓
+🌐 Flask Web Interface / API Response
 
 
 ---
@@ -33,6 +52,18 @@ Image → Caption → Embedding → Vector DB → Query → Rerank → Results
   - `search_stock`
   - `delete_stock`
 - Auto argument extraction
+
+---
+
+### 🧠 AI Agent Decision Layer
+The system uses an LLM (Gemini) as a reasoning engine that:
+
+- Interprets user intent in natural language
+- Decides which tool should be executed
+- Extracts required parameters automatically
+- Routes execution dynamically at runtime
+
+This turns the system from a traditional CRUD application into an **autonomous AI agent system**.
 
 ---
 
