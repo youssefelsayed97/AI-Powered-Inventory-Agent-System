@@ -1,0 +1,121 @@
+{
+    "Stock": [
+        {
+            "Name": "ipad",
+            "Code": "88",
+            "LowPrice": 100,
+            "HighPrice": 450,
+            "Source": "Indoor",
+            "Image": "3226630f59b44893968eb6083ada1999.jpg",
+            "ImageDescription": "the ipad is shown with the new ipad"
+        },
+        {
+            "Name": "iphone",
+            "Code": "9",
+            "LowPrice": 99,
+            "HighPrice": 1000,
+            "Source": "Indoor",
+            "Image": "0ebf5f0ea28f452ca3a61290dd33fd06.jpg",
+            "ImageDescription": "the iphone 11 is the most affordable iphone yet"
+        },
+        {
+            "Name": "Nike",
+            "Code": "021",
+            "LowPrice": 15,
+            "HighPrice": 150,
+            "Source": "Outdoor",
+            "Image": "478c72cdb4654d3b9008611f751aed87.jpeg",
+            "ImageDescription": "a pair of sneakers with blue and white accents"
+        },
+        {
+            "Name": "tablet ",
+            "Code": "343",
+            "LowPrice": 944,
+            "HighPrice": 3000,
+            "Source": "Indoor",
+            "Image": "07422193d4cb43c799e763182147ba4b.jpg",
+            "ImageDescription": "the ipad is shown with the new ipad"
+        },
+        {
+            "Name": "ps5 black ops game",
+            "Code": 7,
+            "LowPrice": 44,
+            "HighPrice": 75,
+            "Source": "Indoor",
+            "Image": "327805066ac44ed88a21e6ffa86a9189.jpeg",
+            "ImageDescription": "call of the black ops"
+        },
+        {
+            "Name": "remote car game",
+            "Code": 44,
+            "LowPrice": 10,
+            "HighPrice": 30,
+            "Source": "Outdoor",
+            "Image": "9ea03307e7c341ba934bfa216f92c9fb.jpeg",
+            "ImageDescription": "a remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote remote"
+        },
+        {
+            "Name": "bic lighter",
+            "Code": 55,
+            "LowPrice": 10,
+            "HighPrice": 20,
+            "Source": "Outdoor",
+            "Image": "63d2e34b944b409783643a8dcd951fcc.jpeg",
+            "ImageDescription": "a lighter with a lighter lighter in the middle"
+        },
+        {
+            "Name": "metal lighter",
+            "Code": 558,
+            "LowPrice": 50,
+            "HighPrice": 100,
+            "Source": "Outdoor",
+            "Image": "61b92541c5bf415390aa8daa875483d0.jpeg",
+            "ImageDescription": "a lighter with a lighter lighter in it"
+        },
+        {
+            "Name": "hair shampoo",
+            "Code": 5422,
+            "LowPrice": 15,
+            "HighPrice": 30,
+            "Source": "Indoor",
+            "Image": "c8d5bf04066548129863c0c415232a90.jpeg",
+            "ImageDescription": "l ' orene shaming sham sham sham sham sham sham sham sham sham sham sham sham sham sham"
+        },
+        {
+            "Name": "woman sandals",
+            "Code": 865,
+            "LowPrice": 40,
+            "HighPrice": 60,
+            "Source": "Outdoor",
+            "Image": "e88a64795c2041afbb46d14e19c4714c.jpeg",
+            "ImageDescription": "a woman ' s sandal sandals with a black sole"
+        },
+        {
+            "Name": "computer screen",
+            "Code": 9898,
+            "LowPrice": 50,
+            "HighPrice": 150,
+            "Source": "Indoor",
+            "Image": "d9bf40a6411f4bd4b476ae035732e33e.jpeg",
+            "ImageDescription": "a computer monitor on a white background"
+        },
+        {
+            "Name": "wirless mouse",
+            "Code": 5487,
+            "LowPrice": 10,
+            "HighPrice": 25,
+            "Source": "Indoor",
+            "Image": "1417358b2144418fbcfb7da2f0ffdf31.jpeg",
+            "ImageDescription": "a purple mouse with a usb cable attached to it"
+        },
+        {
+            "Name": "laptop black 32GB RAM",
+            "Code": 2333,
+            "LowPrice": 300,
+            "HighPrice": 600,
+            "Source": "Outdoor",
+            "Image": "d31c973fcf6c4f849d89d2f42a7aaf57.jpeg",
+            "ImageDescription": "the hp pavilion 15 laptop"
+        }
+    ]
+}

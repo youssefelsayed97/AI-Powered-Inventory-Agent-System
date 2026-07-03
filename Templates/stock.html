@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Stock</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #ffbf00;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ffecb3;
+        }
+
+        .top-bar {
+            margin-bottom: 20px;
+        }
+
+        .ai-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .ai-btn:hover {
+            background-color: #388E3C;
+        }
+
+        #ai {
+            display: none;
+            margin-top: 15px;
+        }
+
+        #ai input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        #ai button {
+            padding: 10px 20px;
+            background: #f4a460;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        #ai button:hover {
+            background: #d2691e;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-bar">
+
+        <button class="ai-btn" onclick="ai()">
+            🤖 AI
+        </button>
+
+        <div id="ai">
+
+            <form action="/AI" method="POST">
+
+                <input
+                    type="text"
+                    name="query"
+                    placeholder="ask ai...">
+
+                <button type="submit">
+                    ask
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <h2 align="center">Stock</h2>
+
+    <table>
+
+        <tr>
+            <th>No.</th>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Code</th>
+            <th>Low Price</th>
+            <th>High Price</th>
+            <th>Source</th>
+        </tr>
+
+        {% for stock in stocks %}
+
+        <tr>
+
+            <td>{{ loop.index }}</td>
+
+            <td>
+                <img src="{{ url_for('static', filename='UPLOADS/' + stock.Image) }}"
+                     width="100">
+            </td>
+
+            <td>{{ stock.Name }}</td>
+
+            <td>{{ stock.Code }}</td>
+
+            <td>{{ stock.LowPrice }}</td>
+
+            <td>{{ stock.HighPrice }}</td>
+
+            <td>{{ stock.Source }}</td>
+
+        </tr>
+
+        {% endfor %}
+
+    </table>
+
+    <script>
+        function ai() {
+
+            var ai = document.getElementById("ai");
+
+            if (ai.style.display === "none" || ai.style.display === "") {
+                ai.style.display = "block";
+            } else {
+                ai.style.display = "none";
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
